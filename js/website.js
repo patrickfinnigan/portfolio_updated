@@ -13,7 +13,6 @@
 
   $("#contactSubmitButton").on("click", () => {
     // event.preventDefault();
-
     let name = $("#nameEntry").val().trim();
     let email = $("#emailEntry").val().trim();
     let message = $("#messageEntry").val().trim();
@@ -23,7 +22,4 @@
         email: email,
         message: message,
     });
-
-
-
   });
