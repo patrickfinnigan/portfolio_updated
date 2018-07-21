@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Patrick's Portfolio Lite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- reset css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css" />
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid jumbotron-dark">
+        <div class="container">
+            <h1 class="display-4">Patrick's Portfolio Lite</h1>
+            <p class="lead">The ongoing work of Patrick Finnigan's bootcamp progression!</p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="./index.html">About</a>
+                <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
+                <a class="nav-item nav-link active" href="./contact.html">Contact
+                    <span class="sr-only">(current)</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="card col-8 mx-4">
+                <div class="card-body">
+                    <h2>Contact</h2>
+                    <form class="needs-validation">
+                        <div class="form-group">
+                            <label for="nameEntry">Name</label>
+                            <input type="text" class="form-control" id="nameEntry" placeholder="John Farson" required></input>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailEntry">Email address</label>
+                            <input type="email" class="form-control" id="emailEntry" placeholder="name@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="messageEntry">Message</label>
+                            <textarea class="form-control" id="messageEntry" rows="3" placeholder="Submit to Firebase!" required></textarea>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label for="fileEntry">Submission</label>
+                            <input type="file" class="form-control-file" id="fileEntry">
+                        </div> -->
+                        <button class="btn btn-light" id="contactSubmitButton" type="submit">Submit form</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card col-3 social-bar" style="width: 18rem;">
+                <div class="row">
+                    <img class="card-img-top col-4" src="./images/github.png" alt="Github">
+                    <img class="card-img-top col-4" src="./images/linkedin.png" alt="LinkedIn">
+                    <img class="card-img-top col-4" src="./images/stackoverflow.png" alt="Stack Overflow">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Connect</h5>
+                    <p class="card-text">
+                        Check me out!
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item card-link">
+                        <a href="https://github.com/patrickfinnigan">Github</a>
+                    </li>
+                    <li class="list-group-item card-link">
+                        <a href="https://www.linkedin.com/in/patrickjfinnigan/">LinkedIn</a>
+                    </li>
+                    <li class="list-group-item card-link">
+                        <a href="https://stackoverflow.com/users/9613775/patrick-finnigan?tab=profile">Stack Overflow</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<!-- Firebase js -->
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<!-- bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+<!-- custom js -->
+<script src="./js/website.js"></script>
+
+</html>
